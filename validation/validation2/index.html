@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>login page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+    <form  name="myForm"  action=""  method="post">
+        <!-- <label for="username">username</label> -->
+        <input type="text" id="username" name="username" required><br>
+        <!-- <label for="password">password</label> -->
+        <input type="text" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+        <div class="btn-group">
+            <button type="submit" value="submit"  onclick="myFunction() " > Login</button>
+            
+        </div>
+        <p id="demo"></p>
+        <p style="color:#d8d8d8 ;" >Not regestered?<a href="#"  style="color:#89c0a8" >Create an account</a></p>
+    </form>
+    </div>
+    <div id="message">
+        <h5>Password must contain the following:</h5>
+        <li id="letter" class="invalid">A <b>lowercase</b> letter</li>
+        <li id="capital" class="invalid">A <b>capital (uppercase)</b> letter</li>
+        <li id="number" class="invalid">A <b>number</b></li>
+        <li id="length" class="invalid">Minimum <b>8 characters</b></li>
+      </div>
+
+
+
+
+
+      <script src='script.js'></script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+
+</div>
+
+<script>
+function loadDoc() {
+ 
+  const xhttp = new XMLHttpRequest();
+  var josnobj,jsobj;
+  
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      josnobj=xhttp.responseText;
+      jsobj=JSON.parse(josnobj)
+      // console.log(jsobj);
+      
+      for(var x=0;x<6;x++){
+       
+      document.write("email:"+jsobj["data"][x]["email"]+ "  .... "+"img:"+jsobj["data"][x]["avatar"]  +"<br> <br><br>"); 
+      }
+    } 
+  };
+  xhttp.open("GET", "https://reqres.in/api/users?page=2");
+  xhttp.send();
+  
+}
+
+
+</script>
+
+</body>
+</html> 

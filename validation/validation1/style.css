@@ -1,0 +1,54 @@
+body{
+  background-color:#73c259;
+}
+
+form{
+  background-color:white;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  display: block;
+  margin-top: 150px;
+margin-left: auto;
+margin-right: auto;
+
+   
+
+}
+input{
+    margin: 7px; 
+   padding: 10px;  
+  
+  background-color:#f2f2f2 ;
+  border: none;
+  width: 176px;
+  height:10px;
+  color:#d4dbdb;
+  font-size: 10px;
+  
+  
+}
+#username{
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+button{
+  background-color:#00b242;
+  color:#dadada;
+  border: none;
+  width: 196px;
+  height:32px;
+}
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+p{
+  font: 10px sans-serif;
+}
+a {
+  text-decoration: none;
+}
